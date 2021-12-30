@@ -26,7 +26,7 @@ Route::get('/login', function () {
     ]);
   })->name('login');
 
-  Route::resource('posts', PostController::class)->except('store');
+//   Route::resource('posts', PostController::class)->except('store');
 
 
 

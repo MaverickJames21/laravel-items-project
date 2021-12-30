@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class MainViewController extends Controller
@@ -17,6 +17,15 @@ class MainViewController extends Controller
     {
 
         return view('chat');
+    }
+
+    public function post()
+    {
+
+        $posts = Post::paginate(2);
+        return view('post',[
+            'posts' => $posts
+        ]);
     }
 
 }

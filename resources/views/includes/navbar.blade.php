@@ -20,7 +20,7 @@
                 <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/items">Items</a>
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/post">Posts</a>
               </li>
 
               <li class="nav-item">

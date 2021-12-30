@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Main controller route
 Route::get('/', [ MainViewController::class,'home' ]);
 Route::get('chat', [ MainViewController::class,'chat' ]);
+Route::get('post', [ MainViewController::class,'post' ]);
 
-
-
+// login and register route auth
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
